@@ -1,7 +1,7 @@
 package com.github.hummel.sp.course
 
 import com.formdev.flatlaf.FlatLightLaf
-import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatGitHubDarkIJTheme
+import com.formdev.flatlaf.intellijthemes.materialthemeuilite.FlatMTGitHubDarkIJTheme
 import com.github.hummel.sp.course.app.App
 import com.github.hummel.sp.course.app.FourierTransform
 import com.github.hummel.sp.course.app.VisBar
@@ -24,7 +24,7 @@ fun main() {
 	FlatLightLaf.setup()
 	EventQueue.invokeLater {
 		try {
-			UIManager.setLookAndFeel(FlatGitHubDarkIJTheme())
+			UIManager.setLookAndFeel(FlatMTGitHubDarkIJTheme())
 			val frame = GUI()
 			frame.isVisible = true
 		} catch (e: Exception) {
